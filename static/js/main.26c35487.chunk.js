@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-keeper-app"]=this["webpackJsonpreact-keeper-app"]||[]).push([[0],{3:function(e,t,n){e.exports=n(9)},9:function(e,t,n){"use strict";n.r(t);var r=n(0),a=n.n(r),p=n(2);var c=function(){return a.a.createElement("h1",null," hello world haii")};n.n(p).a.render(a.a.createElement(c,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.26c35487.chunk.js.map
