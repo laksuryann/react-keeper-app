@@ -1,42 +1,63 @@
 import React, { useState } from "react";
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import Zoom from '@material-ui/core/Zoom';
 
-function CreateArea(props) { 
+function CreateArea(props) {
 
-  const [ note , setNote ] = useState({
+  const [ fullNote , setFullNote ] = useState(false);
+
+  const [note, setNote] = useState({
     title: "",
     content: ""
   });
 
-  function handleChange(event){
-      const { name , value } = event.target;
+  function handleChange(event) {
+    const { name, value } = event.target;
 
-      setNote( (prevNote) => {
-        return {
-          ...prevNote,
-          [name] : value
-        }
-      });
+    setNote(prevNote => {
+      return {
+        ...prevNote,
+        [name]: value
+      };
+    });
   }
 
-  function handleClick(event){
+  function handleClick(){
+    setFullNote(true);
+  }
+
+  function submitNote(event) {
     props.onAdd(note);
-    setNote(()=> {
-      return {
-        title: "",
-        content: ""
-      }
-    })  
+    setNote({
+      title: "",
+      content: ""
+    });
     event.preventDefault();
   }
 
   return (
     <div>
-      <form>
-        <input name="title" placeholder="Title" onChange={handleChange} value={note.title}/>
-        <textarea name="content" placeholder="Take a note..." rows="3" onChange={handleChange} value={note.content}/>
-        <button onClick={handleClick}
-        >
-          Add</button>
+      <form className="create-note">
+        <input
+          onClick={handleClick}
+          name="title"
+          onChange={handleChange}
+          value={note.title}
+          placeholder="Title"
+        />
+        { fullNote ? <textarea
+          name="content"
+          onChange={handleChange}
+          value={note.content}
+          placeholder="Take a note..."
+          rows="3"
+        /> : null }
+        <Zoom in={ fullNote }>
+        <Fab onClick={submitNote}>
+          <AddIcon />
+        </Fab>
+        </Zoom>
       </form>
     </div>
   );
