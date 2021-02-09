@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/react-keeper-app/static/js/main.0b92af8a.chunk.js",
-    "main.js.map": "/react-keeper-app/static/js/main.0b92af8a.chunk.js.map",
+    "main.js": "/react-keeper-app/static/js/main.af56a47e.chunk.js",
+    "main.js.map": "/react-keeper-app/static/js/main.af56a47e.chunk.js.map",
     "runtime-main.js": "/react-keeper-app/static/js/runtime-main.beffe921.js",
     "runtime-main.js.map": "/react-keeper-app/static/js/runtime-main.beffe921.js.map",
     "static/js/2.61aecf37.chunk.js": "/react-keeper-app/static/js/2.61aecf37.chunk.js",
     "static/js/2.61aecf37.chunk.js.map": "/react-keeper-app/static/js/2.61aecf37.chunk.js.map",
     "index.html": "/react-keeper-app/index.html",
-    "precache-manifest.9129ba1db2dcb4dc972c1b6aa2295478.js": "/react-keeper-app/precache-manifest.9129ba1db2dcb4dc972c1b6aa2295478.js",
+    "precache-manifest.3a25551e4f73201f997a069fd2f08185.js": "/react-keeper-app/precache-manifest.3a25551e4f73201f997a069fd2f08185.js",
     "service-worker.js": "/react-keeper-app/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.beffe921.js",
     "static/js/2.61aecf37.chunk.js",
-    "static/js/main.0b92af8a.chunk.js"
+    "static/js/main.af56a47e.chunk.js"
   ]
 }
